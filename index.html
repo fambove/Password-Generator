@@ -9,11 +9,38 @@
   </head>
   <body>
         <script src="script.js"></script>
-        <div class="">
-          <h1>Password Generator</h1>
-          <div class="">
+        <div class="container">
+          <h2>Password Generator</h2>
+          <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipbord">
+              <i class="far fa-clipboard"></i>
+            </button>
             <input type="text">
+            <div class="settings">
+              <div class="setting">
+                <label >Password Length</label>
+                <input type="number" value="20" min="4" id="lenght">
+              </div>
+              <div class="setting">
+                <label >include uppercase letters</label>
+                <input type="checkbox"  checked id="uppercase">
+              </div>
+              <div class="setting">
+                <label >include uppercase letters</label>
+                <input type="checkbox" checked id="lowercase">
+              </div>
+              <div class="setting">
+                <label >include numbers</label>
+                <input type="checkbox" checked id="number">
+              </div>
+              <div class="setting">
+                <label >include symbols</label>
+                <input type="checkbox"  checked id="symbols">
+              </div>
+            </div>
           </div>
+          <button class="btn btn-large" id="generate"> Generate Password</button>
         </div>
   </body>
 </html>
