@@ -5,7 +5,9 @@
   }
   
   body {
-    font-family: 'Robot', sans-serif;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    background-color: #3b3b98;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,4 +15,61 @@
     height: 100vh;
     overflow: hidden;
     margin: 0;
+  
   }
+  h2{
+    margin: 10px 0px 20px;
+    text-align: center;
+  }
+  .container {
+    background-color: #23235b;
+    box-shadow: 0px 2px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+
+  }
+  .result-container{
+    background-color:rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content:flex-start ;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%; 
+  }
+  .result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  }
+  .result-container #result{
+    word-wrap: break-word;
+    max-width: calc(100%-40px);
+    overflow: scroll;
+    height: 100%;
+  }
+  .setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  margin: 15px 0px;
+  }
+  .btn{
+    border: none;
+    font-size: 16px;
+    background-color: #3b3b98;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .btn-large{
+    display: block;
+    width: 100%;
+  }
+  
+
+  
